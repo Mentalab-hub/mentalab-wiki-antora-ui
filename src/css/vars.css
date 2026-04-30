@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light;
+  /*color-scheme: light dark;*/
   /* colors */
   --color-white: #fff;
   --color-smoke-10: #fefefe;
@@ -17,6 +19,15 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
+  --color-background-black: #151515;
+  --color-ci-main: #00aaff;
+  --color-ci-main-hover: #1e82d0;
+  --color-ci-accent: #82c8ff;
+  --color-ci-grey: #e0e0e0;
+  --color-ci-hover-back: #f1f2f5;
+  --color-ci-hover-front: #121723;
+  --color-ci-select-back: #dcecfe;
+  --color-ci-select-front: #174195;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -24,38 +35,45 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
+  --body-font-family: "Inter", sans-serif;
   --body-font-weight-bold: 600;
-  --monospace-font-family: "Roboto Mono", monospace;
+  /*--monospace-font-family: "Roboto Mono", monospace;*/
+  --monospace-font-family: "Inter", monospace;
   --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--color-white);
+  /*--body-background: light-dark(--color-background-black, --color-white);*/
   --panel-background: var(--color-smoke-30);
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-track-color: var(--color-smoke-30);
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background: var(--color-background-black);
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
+  --navbar_hover-background: var(--color-background-black);
+  --navbar_hover-font-color: var(--color-ci-main);
+  --navbar-button-background: var(--color-ci-main);
+  --navbar-button-border-color: var(--color-ci-main);
+  --navbar-button-font-color: var(--color-white);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--color-white);
   --navbar-menu-font-color: var(--body-font-color);
   --navbar-menu_hover-background: var(--color-smoke-50);
   /* nav */
-  --nav-background: var(--panel-background);
+  --nav-background: var(--body-background);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
   --nav-heading-font-color: var(--color-jet-30);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
+  --nav-hover-element-background: var(--color-ci-hover-back);
+  --nav-hover-element-foreground: var(--color-ci-hover-front);
+  --nav-select-element-background: var(--color-ci-select-back);
+  --nav-select-element-foreground: var(--color-ci-select-front);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
+  --toolbar-background: var(--body-background);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--color-gray-70);
   --toolbar-muted-color: var(--color-gray-40);
@@ -83,8 +101,8 @@
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: var(--color-ci-main);
+  --link_hover-font-color: var(--color-ci-main-hover);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);
@@ -118,7 +136,7 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-smoke-90);
+  --footer-background: var(--nav-hover-element-background);
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */

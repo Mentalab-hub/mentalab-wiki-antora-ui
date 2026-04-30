@@ -15,7 +15,7 @@ body.-toc aside.toc.sidebar {
 @media screen and (min-width: 1024px) {
   main {
     flex: auto;
-    min-width: 0; /* min-width: 0 required for flexbox to constrain overflowing elements */
+    min-width: 60rem; /* min-width: 0 required for flexbox to constrain overflowing elements */
   }
 
   main > .content {

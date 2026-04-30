@@ -29,6 +29,13 @@ body {
   padding-left: 1rem;
 }
 
+.navbar-brand-logo {
+  content: url(../img/icons/logo-dark.svg);
+  float: center;
+  align-self: center;
+  height: calc(16 / var(--rem-base) * 1.2rem);
+}
+
 .navbar-brand .navbar-item {
   color: var(--navbar-font-color);
 }
@@ -183,11 +190,20 @@ body {
   align-items: center;
   background: var(--navbar-button-background);
   border: 1px solid var(--navbar-button-border-color);
-  border-radius: 0.15rem;
+  border-radius: 5px;
   height: 1.75rem;
   color: var(--navbar-button-font-color);
   padding: 0 0.75em;
   white-space: nowrap;
+  transition:
+    background 200ms ease,
+    border 200ms ease;
+}
+
+.navbar .button:hover {
+  background: var(--color-ci-main-hover);
+  border: 1px solid var(--color-ci-main-hover);
+  transition: all 200ms ease;
 }
 
 @media screen and (max-width: 768.5px) {
@@ -282,13 +298,15 @@ body {
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
     color: var(--navbar-font-color);
+    transition: color 200ms ease;
   }
 
   .navbar-end > a.navbar-item:hover,
   .navbar-end .navbar-link:hover,
   .navbar-end .navbar-item.has-dropdown:hover .navbar-link {
     background: var(--navbar_hover-background);
-    color: var(--navbar-font-color);
+    color: var(--navbar_hover-font-color);
+    transition: color 200ms ease;
   }
 
   .navbar-end .navbar-link::after {

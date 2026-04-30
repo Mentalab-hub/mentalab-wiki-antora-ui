@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  /*color-scheme: light dark;*/
+  /* color-scheme: light dark; */
   /* colors */
   --color-white: #fff;
   --color-smoke-10: #fefefe;
@@ -20,7 +20,7 @@
   --color-jet-80: #191919;
   --color-black: #000;
   --color-background-black: #151515;
-  --color-ci-main: #00aaff;
+  --color-ci-main: #0af;
   --color-ci-main-hover: #1e82d0;
   --color-ci-accent: #82c8ff;
   --color-ci-grey: #e0e0e0;
@@ -37,12 +37,12 @@
   --body-font-color: var(--color-jet-70);
   --body-font-family: "Inter", sans-serif;
   --body-font-weight-bold: 600;
-  /*--monospace-font-family: "Roboto Mono", monospace;*/
+  /* --monospace-font-family: "Roboto Mono", monospace; */
   --monospace-font-family: "Inter", monospace;
   --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--color-white);
-  /*--body-background: light-dark(--color-background-black, --color-white);*/
+  /* --body-background: light-dark(--color-background-black, --color-white); */
   --panel-background: var(--color-smoke-30);
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-track-color: var(--color-smoke-30);

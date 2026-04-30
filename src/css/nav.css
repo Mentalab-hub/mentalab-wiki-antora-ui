@@ -147,7 +147,7 @@
 }
 
 .nav-text:hover,
-.nav-link:hover{
+.nav-link:hover {
   display: block;
   color: var(--nav-hover-element-foreground);
   background-color: var(--nav-hover-element-background);

@@ -2,7 +2,7 @@
 
 This repository contains the UI files to package a UI bundle for use with Antora to build the https://wiki.mentalab.com[public Mentalab wiki]. It's modified from the https://gitlab.com/antora/antora-ui-default/[Antora default UI].
 
-To preview the UI with a dummy wiki, refer to the README of the Antora default UI.
+You can preview the UI with dummy documentation, run `npx gulp preview` in the root folder. To bundle a ui file (to be used by the wiki), run `npx gulp bundle`. This will create a `ui-bundle.zip` file that in `/build/` that can be loaded by Antora.
 
 == Copyright and License
 

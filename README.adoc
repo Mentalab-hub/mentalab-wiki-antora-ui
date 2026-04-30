@@ -1,0 +1,9 @@
+= Mentalab wiki Antora UI
+
+This repository contains the UI files to package a UI bundle for use with Antora to build the https://wiki.mentalab.com[public Mentalab wiki]. It's modified from the https://gitlab.com/antora/antora-ui-default/[Antora default UI].
+
+To preview the UI with a dummy wiki, refer to the README of the Antora default UI.
+
+== Copyright and License
+
+The Mentalab wiki Antora UI as well as the Antora default UI it is built upon are licensed under https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
